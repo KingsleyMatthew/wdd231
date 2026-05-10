@@ -1,0 +1,200 @@
+:root {
+  --primary: #1f1f1f;
+  --secondary: #d9d9d9;
+  --completed: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #efefef;
+  color: #111;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.logo-area img {
+  width: 50px;
+}
+
+.logo-area span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* MENU */
+
+#menu {
+  font-size: 2rem;
+  border: 1px solid #999;
+  background: white;
+  padding: .2rem .7rem;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+.navigation {
+  list-style: none;
+  display: none;
+}
+
+.navigation.open {
+  display: block;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  background: var(--primary);
+  border-top: 1px solid #555;
+}
+
+.navigation li a:hover {
+  background: #444;
+}
+
+.navigation .active {
+  background: #555;
+}
+
+/* MAIN */
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* CARDS */
+
+.card,
+.certificate-section {
+  background: var(--secondary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.card h2,
+.certificate-section h2 {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: .6rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  padding: 1rem;
+  line-height: 1.7;
+}
+
+.photo-box {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-box img {
+  width: 220px;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* FILTER BUTTONS */
+
+.filter-buttons {
+  display: flex;
+  gap: .7rem;
+  padding: 1rem;
+}
+
+.filter-buttons button {
+  flex: 1;
+
+  padding: .8rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background: #ddd;
+}
+
+/* COURSES */
+
+#courses-container {
+  display: grid;
+  gap: .8rem;
+  padding: 0 1rem;
+}
+
+.course-card {
+  background: #bdbdbd;
+  text-align: center;
+  padding: .6rem;
+  border: 1px solid #888;
+}
+
+.completed {
+  background: var(--completed);
+  color: white;
+}
+
+#credits {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+.socials img {
+  width: 50px;
+}

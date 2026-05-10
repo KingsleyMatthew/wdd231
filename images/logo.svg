@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="55" fill="#1f1f1f"/>
+
+  <!-- Code brackets -->
+  <text x="60" y="72" text-anchor="middle"
+        font-size="50"
+        fill="#ffffff"
+        font-family="Arial, sans-serif">
+    &lt;/&gt;
+  </text>
+
+</svg>

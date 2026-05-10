@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px) {
+
+  /* MENU */
+
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    background: #1f1f1f;
+  }
+
+  .navigation li {
+    flex: 1;
+  }
+
+  .navigation li a {
+    border: none;
+    text-align: center;
+  }
+
+  /* MAIN GRID */
+
+  .top-sections {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  /* COURSES */
+
+  #courses-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
