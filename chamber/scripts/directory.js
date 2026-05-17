@@ -2,33 +2,63 @@ const container = document.querySelector("#members-container");
 const gridBtn = document.querySelector("#gridBtn");
 const listBtn = document.querySelector("#listBtn");
 
+const menuBtn = document.querySelector("#menuBtn");
+const navMenu = document.querySelector("#navMenu");
+
+/* MOBILE MENU */
+
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+});
+
+/* FETCH MEMBERS */
+
 async function getMembers() {
   const response = await fetch("data/members.json");
   const data = await response.json();
   displayMembers(data);
 }
 
+/* DISPLAY MEMBERS */
+
 function displayMembers(members) {
+
   container.innerHTML = "";
 
   members.forEach(member => {
-    const card = document.createElement("div");
+
+    const card = document.createElement("section");
     card.classList.add("card");
 
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name}">
-      <h2>${member.name}</h2>
-      <p>${member.address}</p>
-      <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
-      <p>Membership Level: ${member.membership}</p>
+      <div class="card-header">
+        <h2>${member.name}</h2>
+        <p class="tagline">${member.description}</p>
+      </div>
+
+      <div class="card-content">
+
+        <img loading="lazy" src="images/${member.image}" alt="${member.name}">
+
+        <div class="info">
+          <p><strong>EMAIL:</strong> ${member.email}</p>
+          <p><strong>PHONE:</strong> ${member.phone}</p>
+          <p><strong>URL:</strong> 
+            <a href="${member.website}" target="_blank">
+              ${member.website.replace("https://", "")}
+            </a>
+          </p>
+        </div>
+
+      </div>
     `;
 
     container.appendChild(card);
   });
 }
 
-// Toggle Views
+/* GRID/LIST BUTTONS */
+
 gridBtn.addEventListener("click", () => {
   container.classList.add("grid");
   container.classList.remove("list");
@@ -39,9 +69,14 @@ listBtn.addEventListener("click", () => {
   container.classList.remove("grid");
 });
 
-// Footer Dates
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+/* FOOTER */
 
-// Init
+document.querySelector("#year").textContent =
+  new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent =
+  document.lastModified;
+
+/* INITIALIZE */
+
 getMembers();

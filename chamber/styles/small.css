@@ -1,24 +1,100 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+:root {
+  --primary: #1D3557;
+  --secondary: #0F172A;
+  --accent: #F4A261;
+  --background: #F1F5F9;
+  --text: #111827;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+/* HEADER */
+
 header {
-  background: #003049;
-  color: white;
+  background: white;
   padding: 1rem;
-  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 55px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+#menuBtn {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+nav.open {
+  display: flex;
 }
 
 nav a {
-  color: white;
-  margin: 0 10px;
+  padding: 0.8rem;
   text-decoration: none;
+  color: var(--secondary);
+  border-bottom: 1px solid #ddd;
 }
 
-.view-buttons {
-  margin-top: 10px;
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--accent);
 }
+
+/* DIRECTORY CONTROLS */
+
+.directory-controls {
+  text-align: center;
+  margin: 1rem;
+}
+
+.directory-controls button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* MEMBER CARDS */
 
 #members-container.grid {
   display: grid;
@@ -28,18 +104,86 @@ nav a {
 }
 
 #members-container.list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 1rem;
 }
 
 .card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 10px;
-  background: #fff;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
+.card-header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.card-content {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.card-content img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border: 1px solid #999;
+}
+
+.info p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+
+.info strong {
+  color: black;
+}
+
+.info a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+  background: #e5e7eb;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer section {
+  margin-bottom: 1.5rem;
+}
+
+.socials img {
+  width: 50px;
+  height: 50px;
+  padding: 1px;
+  border-radius: 50%;
+  background: #6b7280;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
 }

@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Aba Chamber of Commerce - Directory</title>
+
   <meta name="description" content="Directory of businesses in the Aba Chamber of Commerce.">
   <meta name="author" content="Kingsley Matthew Edet">
 
-  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
 
-  <!-- Facebook/Open Graph Meta -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Aba Chamber of Commerce Directory">
-  <meta property="og:description" content="Explore local businesses and members of the Aba Chamber of Commerce.">
-  <meta property="og:image" content="https://KingsleyMatthew.github.io/wdd231/chamber/images/hero.png">
-  <meta property="og:url" content="https://KingsleyMatthew.github.io/wdd231/chamber/directory.html">
+  <meta property="og:description" content="Explore local businesses and chamber members in Aba.">
+  <meta property="og:image" content="https://kingsleymatthew.github.io/wdd231/chamber/images/logo.png">
+  <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/chamber/directory.html">
   <meta property="og:type" content="website">
 
   <!-- CSS -->
@@ -24,56 +24,67 @@
   <link rel="stylesheet" href="styles/larger.css">
 
   <!-- JS -->
- <script src="scripts/directory.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
 
 <header>
-  <h1>Aba Chamber of Commerce</h1>
-  <nav>
+
+  <div class="logo">
+    <img src="images/logo.webp" alt="Logo">
+    <div>
+      <h1>Aba Chamber</h1>
+      <p>of Commerce</p>
+    </div>
+  </div>
+
+  <button id="menuBtn" aria-label="Open Navigation Menu">&#9776;</button>
+
+  <nav id="navMenu">
     <a href="#">Home</a>
-    <a href="directory.html">Directory</a>
+    <a href="directory.html" class="active">Directory</a>
     <a href="#">Join</a>
-    <a href="#">Contact</a>
+    <a href="#">Discover</a>
   </nav>
 
-  <div class="view-buttons">
-    <button id="gridBtn">Grid View</button>
-    <button id="listBtn">List View</button>
-  </div>
 </header>
 
 <main>
+
+  <section class="directory-controls">
+    <button id="gridBtn">⬛ Grid</button>
+    <button id="listBtn">☰ List</button>
+  </section>
+
   <section id="members-container" class="grid"></section>
+
 </main>
 
 <footer>
 
-    <section>
-        <h3>Aba Chamber of Commerce</h3>
-        <p>12 Market Road</p>
-        <p>Aba, Abia State</p>
-        <p>info@abachamber.org</p>
-        <p>+234 800 000 0000</p>
-    </section>
+  <section>
+    <h3>Aba Chamber of Commerce</h3>
+    <p>12 Market Road</p>
+    <p>Aba, Abia State</p>
+    <p>info@abachamber.org</p>
+    <p>+234 800 000 0000</p>
+  </section>
 
-    <section class="socials">
-        <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
-        <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
-        <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
-    </section>
+  <section class="socials">
+    <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+    <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
+    <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+  </section>
 
-    <section>
-        <p>WDD231 Class Project</p>
-        <p>Kingsley Matthew Edet</p>
-        <p>&copy; <span id="year"></span> Aba Chamber of Commerce</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-    </section>
+  <section>
+    <p>WDD231 Class Project</p>
+    <p>Kingsley Matthew Edet</p>
+    <p>&copy; <span id="year"></span> Aba Chamber of Commerce</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </section>
 
 </footer>
-
-
 
 </body>
 </html>
