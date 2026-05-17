@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+
+  #members-container.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    text-align: center;
+  }
+  
+}

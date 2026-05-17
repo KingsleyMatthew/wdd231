@@ -1,0 +1,71 @@
+[
+  {
+    "name": "TechNova Solutions",
+    "address": "15 Aba-Owerri Road, Aba",
+    "phone": "+234 801 111 1111",
+    "website": "https://technova.com",
+    "image": "business1.png",
+    "membership": 3,
+    "description": "Software development and IT consulting company."
+  },
+
+  {
+    "name": "Golden Threads Fashion",
+    "address": "22 Ariaria Market Road, Aba",
+    "phone": "+234 802 222 2222",
+    "website": "https://goldenthreads.com",
+    "image": "business3.webp",
+    "membership": 2,
+    "description": "Modern fashion and tailoring services."
+  },
+
+  {
+    "name": "Prime Agro Farms",
+    "address": "9 Umuahia Road, Aba",
+    "phone": "+234 803 333 3333",
+    "website": "https://primeagrofarms.com",
+    "image": "business2.png",
+    "membership": 1,
+    "description": "Agricultural products and food processing."
+  },
+
+  {
+    "name": "Skyline Properties",
+    "address": "18 Asa Road, Aba",
+    "phone": "+234 804 444 4444",
+    "website": "https://skylineproperties.com",
+    "image": "business4.webp",
+    "membership": 3,
+    "description": "Real estate development and property management."
+  },
+
+  {
+    "name": "Rapid Logistics",
+    "address": "7 Port Harcourt Expressway, Aba",
+    "phone": "+234 805 555 5555",
+    "website": "https://rapidlogistics.com",
+    "image": "business5.webp",
+    "membership": 2,
+    "description": "Transportation and logistics solutions."
+  },
+
+  {
+    "name": "FreshMart Stores",
+    "address": "33 Cemetery Road, Aba",
+    "phone": "+234 806 666 6666",
+    "website": "https://freshmartstores.com",
+    "image": "business6.webp",
+    "membership": 1,
+    "description": "Retail grocery and household products."
+  },
+
+  {
+    "name": "Vision Media Hub",
+    "address": "12 Factory Road, Aba",
+    "phone": "+234 807 777 7777",
+    "website": "https://visionmediahub.com",
+    "image": "business7.webp",
+    "membership": 2,
+    "description": "Advertising, branding, and digital marketing agency."
+  }
+]
