@@ -4,6 +4,7 @@
   --accent: #F4A261;
   --background: #F1F5F9;
   --text: #111827;
+  font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -12,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: var(--background);
   color: var(--text);
 }
@@ -23,6 +24,11 @@ header {
   background: white;
   padding: 1rem;
   border-bottom: 1px solid #ddd;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .logo {
@@ -115,6 +121,7 @@ nav a.active {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #ddd;
+  min-height: 220px;
 }
 
 .card-header {
@@ -145,6 +152,7 @@ nav a.active {
   height: 90px;
   object-fit: cover;
   border: 1px solid #999;
+  flex-shrink: 0;
 }
 
 .info p {
@@ -168,6 +176,7 @@ footer {
   padding: 2rem 1rem;
   text-align: center;
   margin-top: 2rem;
+  min-height: 300px;
 }
 
 footer section {
@@ -186,4 +195,16 @@ footer section {
 
 .socials img:hover {
   transform: scale(1.1);
+}
+
+.page-title {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+.site-name {
+  font-size: 1.3rem;
+  font-weight: bold;
 }

@@ -38,7 +38,13 @@ function displayMembers(members) {
 
       <div class="card-content">
 
-        <img loading="lazy" src="images/${member.image}" alt="${member.name}">
+        <img 
+          src="images/${member.image}" 
+          alt="${member.name}"
+          width="90"
+          height="90"
+          loading="lazy"
+        >
 
         <div class="info">
           <p><strong>EMAIL:</strong> ${member.email}</p>
