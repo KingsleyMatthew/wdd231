@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background: var(--background);
   color: var(--text);
 }
@@ -121,7 +121,7 @@ nav a.active {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #ddd;
-  min-height: 220px;
+  min-height: 260px;
 }
 
 .card-header {
@@ -153,6 +153,7 @@ nav a.active {
   object-fit: cover;
   border: 1px solid #999;
   flex-shrink: 0;
+  aspect-ratio: 1 / 1;
 }
 
 .info p {
@@ -176,7 +177,7 @@ footer {
   padding: 2rem 1rem;
   text-align: center;
   margin-top: 2rem;
-  min-height: 300px;
+  min-height: 260px;
 }
 
 footer section {
