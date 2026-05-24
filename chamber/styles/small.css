@@ -357,12 +357,13 @@ header {
 footer {
   background: var(--surface);
 
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   margin-top: 2rem;
 
   text-align: center;
 
-  min-height: 260px;
+  min-height: auto;
+  font-size: 0.9rem;
 }
 
 footer section {
