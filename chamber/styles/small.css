@@ -157,7 +157,7 @@ header {
 }
 
 .card {
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
@@ -177,7 +177,7 @@ header {
 
 .tagline {
   font-size: 0.9rem;
-  color: var(--gray);
+  color: var(--text);
 }
 
 .card-content {
