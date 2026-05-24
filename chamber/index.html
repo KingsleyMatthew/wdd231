@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aba Chamber of Commerce | Home</title>
+
+  <meta name="description" content="Welcome to the Aba Chamber of Commerce. Supporting local businesses and economic growth in Aba.">
+
+  <meta name="author" content="Kingsley Matthew Edet">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aba Chamber of Commerce">
+  <meta property="og:description" content="Supporting businesses and economic development in Aba.">
+  <meta property="og:image" content="https://kingsleymatthew.github.io/wdd231/chamber/images/logo.webp">
+  <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS -->
+  <script src="scripts/home.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    <img
+      src="images/logo.webp"
+      alt="Aba Chamber Logo"
+      width="55"
+      height="55"
+      fetchpriority="high"
+    >
+
+    <div>
+      <span class="site-name">Aba Chamber</span>
+      <p>of Commerce</p>
+    </div>
+  </div>
+
+  <button id="menuBtn" aria-label="Open Navigation Menu">
+    &#9776;
+  </button>
+
+  <nav id="navMenu">
+
+    <a href="index.html" class="active">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="#">Join</a>
+    <a href="#">Discover</a>
+
+  </nav>
+
+</header>
+
+<main>
+
+  <h1 class="page-title">Home</h1>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <picture>
+
+      <source
+        media="(min-width: 768px)"
+        srcset="images/hero.webp"
+      >
+
+      <img
+        src="images/hero.webp"
+        alt="Aba business district"
+        width="1200"
+        height="500"
+        fetchpriority="high"
+      >
+
+    </picture>
+
+    <a href="#" class="cta-button">
+      Join the Chamber
+    </a>
+
+  </section>
+
+  <!-- INFO GRID -->
+
+  <section class="info-grid">
+
+    <!-- EVENTS -->
+
+    <div class="events">
+
+      <h2>Events</h2>
+
+      <div class="box-content">
+
+        <p>
+          Annual Aba Business Summit coming this July.
+          Network with business leaders and entrepreneurs.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- CURRENT WEATHER -->
+
+    <div class="weather-current">
+
+      <h2>Current Weather</h2>
+
+      <div class="weather-box">
+
+        <img
+          src="images/weather.webp"
+          alt="Weather Icon"
+          width="80"
+          height="80"
+        >
+
+        <div>
+
+          <p class="temp">
+            <span id="current-temp"></span>
+          </p>
+
+          <p id="weather-desc"></p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FORECAST -->
+
+    <div class="weather-forecast">
+
+      <h2>Weather Forecast</h2>
+
+      <div class="forecast-box" id="forecast"></div>
+
+    </div>
+
+  </section>
+
+  <!-- SPOTLIGHTS -->
+
+  <section class="spotlights">
+
+    <div id="spotlight-container"></div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <section>
+
+    <h2>Aba Chamber of Commerce</h2>
+
+    <p>12 Market Road</p>
+    <p>Aba, Abia State</p>
+    <p>info@abachamber.org</p>
+    <p>+234 800 000 0000</p>
+
+  </section>
+
+  <div class="socials">
+
+    <a href="#">
+      <img
+        src="images/youtube.webp"
+        alt="YouTube"
+        width="50"
+        height="50"
+      >
+    </a>
+
+    <a href="#">
+      <img
+        src="images/twitter.webp"
+        alt="Twitter"
+        width="50"
+        height="50"
+      >
+    </a>
+
+    <a href="#">
+      <img
+        src="images/linkedin.webp"
+        alt="LinkedIn"
+        width="50"
+        height="50"
+      >
+    </a>
+
+  </div>
+
+  <section>
+
+    <p>WDD231 Class Project</p>
+
+    <p>Kingsley Matthew Edet</p>
+
+    <p>
+      &copy; <span id="year"></span>
+      Aba Chamber of Commerce
+    </p>
+
+    <p>
+      Last Modification:
+      <span id="lastModified"></span>
+    </p>
+
+  </section>
+
+</footer>
+
+</body>
+</html>

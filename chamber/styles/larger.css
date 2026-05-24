@@ -13,14 +13,14 @@
     display: none;
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    margin-top: 0;
-  }
+ #navMenu {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 0;
+}
 
-  nav a {
+  #navMenu a {
     border: none;
   }
 
@@ -55,5 +55,21 @@
     align-items: center;
     text-align: left;
     padding: 2rem 4rem;
+  }
+}
+/* HOME PAGE */
+
+@media (min-width: 768px) {
+
+  .info-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  #spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-content h2 {
+    font-size: 3rem;
   }
 }
