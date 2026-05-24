@@ -394,3 +394,21 @@ footer section {
 .socials img:hover {
   transform: scale(1.1);
 }
+
+/* LIST VIEW */
+
+#members-container.list .card-content {
+  display: block;
+}
+
+#members-container.list .card-content img {
+  display: none;
+}
+
+#members-container.list .card {
+  text-align: center;
+}
+
+#members-container.list .info {
+  width: 100%;
+}
