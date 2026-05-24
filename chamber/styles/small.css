@@ -110,7 +110,7 @@ header {
 /* PAGE TITLE */
 
 .page-title {
-  text-align: center;
+  text-align: left;
   padding: 1rem;
   font-size: 2rem;
   color: var(--secondary);
