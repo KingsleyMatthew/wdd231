@@ -15,7 +15,7 @@
   <meta property="og:title" content="Aba Chamber of Commerce Directory">
   <meta property="og:description" content="Explore local businesses and chamber members in Aba.">
   <meta property="og:image" content="https://kingsleymatthew.github.io/wdd231/chamber/images/logo.webp">
-  <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/chamber/thankyou.html">
   <meta property="og:type" content="website">
 
   <!-- CSS -->
@@ -33,7 +33,7 @@
     onload="this.media='all'"
   >
   <!-- JS -->
-  <script src="scripts/directory.js" defer></script>
+<script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -58,23 +58,62 @@
 
   <nav id="navMenu">
     <a href="index.html">Home</a>
-    <a href="directory.html" class="active">Directory</a>
+    <a href="directory.html">Directory</a>
     <a href="join.html">Join</a>
     <a href="#">Discover</a>
   </nav>
 
 </header>
+<main class="thankyou-main">
 
-<main>
-  <h1 class="page-title">Business Directory</h1>
-  <div class="directory-controls">
-    <button id="gridBtn">⬛ Grid</button>
-    <button id="listBtn">☰ List</button>
-  </div>
+    <h1 class="page-title">Thank You!</h1>
 
-  <div id="members-container" class="grid"></div>
+    <section class="thankyou-card">
+
+        <h2>Your Membership Application Has Been Received</h2>
+
+        <p>
+            Thank you for applying to join the Aba Chamber of Commerce.
+        </p>
+
+        <div class="submission-details">
+
+            <p>
+                <strong>First Name:</strong>
+                <span id="firstName"></span>
+            </p>
+
+            <p>
+                <strong>Last Name:</strong>
+                <span id="lastName"></span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="email"></span>
+            </p>
+
+            <p>
+                <strong>Mobile Phone:</strong>
+                <span id="phone"></span>
+            </p>
+
+            <p>
+                <strong>Organization:</strong>
+                <span id="organization"></span>
+            </p>
+
+            <p>
+                <strong>Application Date:</strong>
+                <span id="timestamp"></span>
+            </p>
+
+        </div>
+
+    </section>
 
 </main>
+
 <footer>
 
   <section>
@@ -98,6 +137,3 @@
   </div>
 
 </footer>
-
-</body>
-</html>
