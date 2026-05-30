@@ -1,303 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aba Chamber of Commerce | Home</title>
-  <meta name="description" content="Welcome to the Aba Chamber of Commerce. Supporting local businesses and economic growth in Aba.">
-  <meta name="author" content="Kingsley Matthew Edet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Aba Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Aba Chamber of Commerce. Supporting local businesses and economic growth in Aba.">
+    <meta name="author" content="Kingsley Matthew Edet">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Aba Chamber of Commerce">
-  <meta property="og:description" content="Supporting businesses and economic development in Aba.">
-  <meta property="og:image" content="https://kingsleymatthew.github.io/wdd231/chamber/images/logo.webp">
-  <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/chamber/join.html">
-  <meta property="og:type" content="website">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aba Chamber of Commerce">
+    <meta property="og:description" content="Supporting businesses and economic development in Aba.">
+    <meta property="og:image" content="https://kingsleymatthew.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <!-- JS -->
-  <script src="scripts/join.js" defer></script>
-
-</head>
-
-<body>
-
-<header>
-
-  <div class="logo">
-    <img
-      src="images/logo.webp"
-      alt="Aba Chamber Logo"
-      width="55"
-      height="55"
-      fetchpriority="high"
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
     >
 
-    <div>
-      <span class="site-name">Aba Chamber</span>
-      <p>of Commerce</p>
-    </div>
-  </div>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- JS -->
+    <script src="scripts/join.js" defer></script>
 
-  <button id="menuBtn" aria-label="Open Navigation Menu">
-    &#9776;
-  </button>
+    </head>
 
-  <nav id="navMenu">
+    <body>
 
-    <a href="index.html">Home</a>
-    <a href="directory.html">Directory</a>
-    <a href="join.html" class="active">Join</a>
-    <a href="#">Discover</a>
+        <header>
 
-  </nav>
+        <div class="logo">
+            <img
+            src="images/logo.webp"
+            alt="Aba Chamber Logo"
+            width="55"
+            height="55"
+            fetchpriority="high"
+            >
 
-</header>
-<main class="join-main">
-
-    <section class="application-form">
-        <h1 class="page-title">Membership Application Form</h1>
-
-        <form method="get" action="thankyou.html">
-
-            <label>
-                First Name
-                <input
-                    type="text"
-                    name="firstname"
-                    title="Enter your first name"
-                    autocomplete="given-name"
-                    required>
-            </label>
-
-            <label>
-                Last Name
-                <input
-                    type="text"
-                    name="lastname"
-                    title="Enter your last name"
-                    autocomplete="family-name"
-                    required>
-            </label>
-
-            <label>
-                Organizational Title
-                <input
-                    type="text"
-                    name="orgtitle"
-                    title="Organization Title"
-                    autocomplete="organization-title"
-                    pattern="[A-Za-z\s\-]{7,}"
-                >
-            </label>
-
-            <label>
-                Email Address
-                <input
-                    type="email"
-                    name="email"
-                    title="Email Address"
-                    autocomplete="email"
-                    placeholder="example@email.com"
-                    required>
-            </label>
-
-            <label>
-                Mobile Phone
-                <input
-                    type="tel"
-                    name="phone"
-                    title="Mobile Phone Number"
-                    autocomplete="tel"
-                    required>
-            </label>
-
-            <label>
-                Organization Name
-                <input
-                    type="text"
-                    name="organization"
-                    title="Organization Name"
-                    autocomplete="organization"
-                    required>
-            </label>
-
-            <label>
-                Membership Level
-
-                <select
-                    name="membership"
-                    title="Membership Level">
-
-                    <option value="np">
-                        NP Membership
-                    </option>
-
-                    <option value="bronze">
-                        Bronze Membership
-                    </option>
-
-                    <option value="silver">
-                        Silver Membership
-                    </option>
-
-                    <option value="gold">
-                        Gold Membership
-                    </option>
-
-                </select>
-            </label>
-
-            <label>
-                Organization Description
-
-                <textarea
-                    name="description"
-                    title="Organization Description"
-                    rows="5"></textarea>
-            </label>
-
-            <input
-                type="hidden"
-                id="timestamp"
-                name="timestamp">
-
-            <input
-                type="submit"
-                value="Apply for Membership"
-                class="submit-btn">
-
-        </form>
-    </section>
-
-    <aside class="membership-levels">
-
-        <h2>Membership Levels</h2>
-
-        <div class="membership-card">
-            <h3>Non Profit Membership Level</h3>
-            <button type="button" data-modal="npModal">
-                Learn More
-            </button>
+            <div>
+            <span class="site-name">Aba Chamber</span>
+            <p>of Commerce</p>
+            </div>
         </div>
 
-        <div class="membership-card">
-            <h3>Bronze Membership Level</h3>
-            <button type="button" data-modal="bronzeModal">
-                Learn More
-            </button>
+        <button id="menuBtn" aria-label="Open Navigation Menu">
+            &#9776;
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="#">Discover</a>
+
+        </nav>
+
+        </header>
+        <main class="join-main">
+
+            <section class="application-form">
+                <h1 class="page-title">Membership Application Form</h1>
+
+                <form method="get" action="thankyou.html">
+
+                    <label>
+                        First Name
+                        <input
+                            type="text"
+                            name="firstname"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input
+                            type="text"
+                            name="lastname"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="orgtitle"
+                            title="Organization Title"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\s\-]{7,}"
+                        >
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input
+                            type="email"
+                            name="email"
+                            title="Email Address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+                    <label>
+                        Mobile Phone
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Mobile Phone Number"
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Organization Name
+                        <input
+                            type="text"
+                            name="organization"
+                            title="Organization Name"
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+                    <label>
+                        Membership Level
+
+                        <select
+                            name="membership"
+                            title="Membership Level">
+
+                            <option value="np">
+                                NP Membership
+                            </option>
+
+                            <option value="bronze">
+                                Bronze Membership
+                            </option>
+
+                            <option value="silver">
+                                Silver Membership
+                            </option>
+
+                            <option value="gold">
+                                Gold Membership
+                            </option>
+
+                        </select>
+                    </label>
+
+                    <label>
+                        Organization Description
+
+                        <textarea
+                            name="description"
+                            title="Organization Description"
+                            rows="5"></textarea>
+                    </label>
+
+                    <input
+                        type="hidden"
+                        id="timestamp"
+                        name="timestamp">
+
+                    <input
+                        type="submit"
+                        value="Apply for Membership"
+                        class="submit-btn">
+
+                </form>
+            </section>
+
+            <aside class="membership-levels">
+
+                <h2>Membership Levels</h2>
+
+                <div class="membership-card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button type="button" data-modal="npModal">
+                        Learn More
+                    </button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button type="button" data-modal="bronzeModal">
+                        Learn More
+                    </button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Silver Membership Level</h3>
+                    <button type="button" data-modal="silverModal">
+                        Learn More
+                    </button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Gold Membership Level</h3>
+                    <button type="button" data-modal="goldModal">
+                        Learn More
+                    </button>
+                </div>
+
+            </aside>
+
+        </main>
+
+        <!-- NP MODAL -->
+
+        <dialog id="npModal">
+            <h3>NP Membership Benefits</h3>
+
+            <ul>
+                <li>No membership fee</li>
+                <li>Community networking</li>
+                <li>Business directory listing</li>
+            </ul>
+
+            <button class="close-btn">Close</button>
+        </dialog>
+
+        <!-- BRONZE -->
+
+        <dialog id="bronzeModal">
+            <h3>Bronze Membership Benefits</h3>
+
+            <ul>
+                <li>Directory listing</li>
+                <li>Member events access</li>
+                <li>Monthly newsletter</li>
+            </ul>
+
+            <button class="close-btn">Close</button>
+        </dialog>
+
+        <!-- SILVER -->
+
+        <dialog id="silverModal">
+            <h3>Silver Membership Benefits</h3>
+
+            <ul>
+                <li>Everything in Bronze</li>
+                <li>Training workshops</li>
+                <li>Advertising discounts</li>
+            </ul>
+
+            <button class="close-btn">Close</button>
+        </dialog>
+
+        <!-- GOLD -->
+
+        <dialog id="goldModal">
+            <h3>Gold Membership Benefits</h3>
+
+            <ul>
+                <li>Everything in Silver</li>
+                <li>Homepage spotlight advertising</li>
+                <li>Premium event discounts</li>
+                <li>Priority business promotion</li>
+            </ul>
+
+            <button class="close-btn">Close</button>
+        </dialog>
+
+        <footer>
+
+        <section>
+            <h2>Aba Chamber of Commerce</h2>
+            <p>12 Market Road</p>
+            <p>Aba, Abia State</p>
+            <p>info@abachamber.org</p>
+            <p>+234 800 000 0000</p>
+        </section>
+
+        <div class="socials">
+            <a href="#"><img src="images/youtube.webp" alt="YouTube" width="50" height="50"></a>
+            <a href="#"><img src="images/twitter.webp" alt="Twitter" width="50" height="50"></a>
+            <a href="#"><img src="images/linkedin.webp" alt="LinkedIn" width="50" height="50"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Kingsley Matthew Edet</p>
+            <p>&copy; <span id="year"></span> Aba Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
         </div>
 
-        <div class="membership-card">
-            <h3>Silver Membership Level</h3>
-            <button type="button" data-modal="silverModal">
-                Learn More
-            </button>
-        </div>
-
-        <div class="membership-card">
-            <h3>Gold Membership Level</h3>
-            <button type="button" data-modal="goldModal">
-                Learn More
-            </button>
-        </div>
-
-    </aside>
-
-</main>
-
-<!-- NP MODAL -->
-
-<dialog id="npModal">
-    <h3>NP Membership Benefits</h3>
-
-    <ul>
-        <li>No membership fee</li>
-        <li>Community networking</li>
-        <li>Business directory listing</li>
-    </ul>
-
-    <button class="close-btn">Close</button>
-</dialog>
-
-<!-- BRONZE -->
-
-<dialog id="bronzeModal">
-    <h3>Bronze Membership Benefits</h3>
-
-    <ul>
-        <li>Directory listing</li>
-        <li>Member events access</li>
-        <li>Monthly newsletter</li>
-    </ul>
-
-    <button class="close-btn">Close</button>
-</dialog>
-
-<!-- SILVER -->
-
-<dialog id="silverModal">
-    <h3>Silver Membership Benefits</h3>
-
-    <ul>
-        <li>Everything in Bronze</li>
-        <li>Training workshops</li>
-        <li>Advertising discounts</li>
-    </ul>
-
-    <button class="close-btn">Close</button>
-</dialog>
-
-<!-- GOLD -->
-
-<dialog id="goldModal">
-    <h3>Gold Membership Benefits</h3>
-
-    <ul>
-        <li>Everything in Silver</li>
-        <li>Homepage spotlight advertising</li>
-        <li>Premium event discounts</li>
-        <li>Priority business promotion</li>
-    </ul>
-
-    <button class="close-btn">Close</button>
-</dialog>
-
-<footer>
-
-  <section>
-    <h2>Aba Chamber of Commerce</h2>
-    <p>12 Market Road</p>
-    <p>Aba, Abia State</p>
-    <p>info@abachamber.org</p>
-    <p>+234 800 000 0000</p>
-  </section>
-
-  <div class="socials">
-    <a href="#"><img src="images/youtube.webp" alt="YouTube" width="50" height="50"></a>
-    <a href="#"><img src="images/twitter.webp" alt="Twitter" width="50" height="50"></a>
-    <a href="#"><img src="images/linkedin.webp" alt="LinkedIn" width="50" height="50"></a>
-  </div>
-  <div>
-    <p>WDD231 Class Project</p>
-    <p>Kingsley Matthew Edet</p>
-    <p>&copy; <span id="year"></span> Aba Chamber of Commerce</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
-  </div>
-
-</footer>
+        </footer>
+    </body>
+</html>

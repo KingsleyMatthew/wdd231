@@ -110,8 +110,9 @@ header {
 /* PAGE TITLE */
 
 .page-title {
-  text-align: left;
+  text-align: center;
   padding: 1rem;
+  margin: 1rem 0;
   font-size: 2rem;
   color: var(--secondary);
 }
@@ -438,14 +439,14 @@ footer section {
 .application-form textarea,
 .application-form select {
   padding: .75rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border);
   border-radius: 5px;
   margin-top: .3rem;
 }
 
 .submit-btn {
   background: var(--primary);
-  color: white;
+  color: var(--white);
   border: none;
   padding: .9rem;
   border-radius: 5px;
@@ -457,7 +458,7 @@ footer section {
 }
 
 .membership-card {
-  background: #e5e7eb;
+  background: var(--surface);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1rem;
@@ -485,8 +486,8 @@ footer section {
 }
 
 .membership-card button {
-  background: white;
-  border: 1px solid #999;
+  background: var(--accent);
+  border: 1px solid var(--border);
   padding: .5rem 1rem;
   cursor: pointer;
 }
@@ -524,18 +525,13 @@ dialog::backdrop {
     padding: 2rem 1rem;
 }
 
-.page-title {
-    text-align: center;
-    margin: 1rem 0;
-}
-
 .thankyou-card {
     max-width: 700px;
     margin: 0 auto;
 
-    background: white;
+    background: var(--surface);
 
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
 
     border-radius: 12px;
 
@@ -553,5 +549,5 @@ dialog::backdrop {
 
 .submission-details p {
     padding: .75rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
 }
