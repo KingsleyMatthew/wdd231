@@ -78,3 +78,37 @@
     padding: 2rem 4rem;
   }
 }
+
+/* MEDIUM */
+
+@media (min-width: 641px) {
+
+  .discover-grid {
+
+    grid-template-areas:
+      "card1 card1"
+      "card2 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
+  }
+
+  .discover-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(110%);
+    transition: .3s;
+  }
+}
+
+/* LARGE */
+
+@media (min-width: 1025px) {
+
+  .discover-grid {
+
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 card8";
+  }
+}

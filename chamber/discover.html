@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Aba Chamber of Commerce | Home</title>
+  <title>Aba Chamber of Commerce | Discovery</title>
 
   <meta name="description" content="Welcome to the Aba Chamber of Commerce. Supporting local businesses and economic growth in Aba.">
 
@@ -15,7 +15,7 @@
   <meta property="og:title" content="Aba Chamber of Commerce">
   <meta property="og:description" content="Supporting businesses and economic development in Aba.">
   <meta property="og:image" content="https://kingsleymatthew.github.io/wdd231/chamber/images/logo.webp">
-  <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/chamber/index.html">
+  <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/chamber/discover.html">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
@@ -36,7 +36,8 @@
   <link rel="stylesheet" href="styles/larger.css">
 
   <!-- JS -->
-  <script src="scripts/home.js" defer></script>
+  <script src="scripts/common.js" defer></script>
+  <script type="module" src="scripts/discover.js"></script>
 
 </head>
 
@@ -65,115 +66,41 @@
 
   <nav id="navMenu">
 
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="directory.html">Directory</a>
     <a href="join.html">Join</a>
-    <a href="discover.html">Discover</a>
+    <a href="discover.html" class="active">Discover</a>
 
   </nav>
 
 </header>
 
 <main>
-  <!-- HERO -->
+  <h1 class="page-title">Discover Aba</h1>
 
-  <section class="hero">
-
-    <picture>
-
-      <source
-        media="(min-width: 768px)"
-        srcset="images/hero.webp"
-      >
-
-      <img
-        src="images/hero.webp"
-        alt="Aba business district"
-        width="1200"
-        height="500"
-        fetchpriority="high"
-      >
-
-    </picture>
-
-    <a href="#" class="cta-button">
-      Join the Chamber
-    </a>
-
+  <section id="visit-message" class="visit-message">
+      <h2>Visitor Information</h2>
+      <p id="visitorText"></p>
   </section>
 
-  <h1 class="page-title">Home</h1>
+  <section id="discover-grid" class="discover-grid"></section>
+  <dialog id="placeModal">
+    <button id="closeModal" class="close-modal">&times;</button>
 
-  <!-- INFO GRID -->
+    <h2 id="modalTitle"></h2>
 
-  <section class="info-grid">
+    <img
+        id="modalImage"
+        src=""
+        alt=""
+        width="500"
+        height="300"
+    >
 
-    <!-- EVENTS -->
+    <address id="modalAddress"></address>
 
-    <div class="events">
-
-      <h2>Events</h2>
-
-      <div class="box-content">
-
-        <p>
-          Annual Aba Business Summit coming this July.
-          Network with business leaders and entrepreneurs.
-        </p>
-
-      </div>
-
-    </div>
-
-    <!-- CURRENT WEATHER -->
-
-    <div class="weather-current">
-
-      <h2>Current Weather</h2>
-
-      <div class="weather-box">
-
-        <img
-          src="images/weather.webp"
-          alt="Weather Icon"
-          width="80"
-          height="80"
-        >
-
-        <div>
-
-          <p class="temp">
-            <span id="current-temp"></span>
-          </p>
-
-          <p id="weather-desc"></p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- FORECAST -->
-
-    <div class="weather-forecast">
-
-      <h2>Weather Forecast</h2>
-
-      <div class="forecast-box" id="forecast"></div>
-
-    </div>
-
-  </section>
-
-  <!-- SPOTLIGHTS -->
-
-  <section class="spotlights">
-
-    <div id="spotlight-container"></div>
-
-  </section>
-
+    <p id="modalDescription"></p>
+</dialog>
 </main>
 
 <footer>

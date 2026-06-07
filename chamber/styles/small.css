@@ -551,3 +551,135 @@ dialog::backdrop {
     padding: .75rem 0;
     border-bottom: 1px solid var(--border);
 }
+
+/* DISCOVER PAGE */
+
+.visit-message {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
+.card7 { grid-area: card7; }
+.card8 { grid-area: card8; }
+
+.discover-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.discover-card h2 {
+  margin-top: 0;
+}
+
+.discover-card figure {
+  margin: 0;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+}
+
+.discover-card address {
+  margin: 1rem 0;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.discover-card button {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: .75rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* DISCOVER MODAL */
+
+#placeModal {
+  width: min(90%, 650px);
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 1.5rem;
+
+  background: var(--white);
+
+  color: var(--text);
+}
+
+#placeModal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#modalTitle {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+#modalImage {
+  width: 100%;
+  height: auto;
+
+  border-radius: 8px;
+
+  margin-bottom: 1rem;
+}
+
+#modalAddress {
+  font-style: normal;
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+
+  color: var(--secondary);
+}
+
+#modalDescription {
+  line-height: 1.6;
+}
+
+.close-modal {
+  float: right;
+
+  border: none;
+  background: var(--primary);
+  color: var(--white);
+
+  padding: .5rem .8rem;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
