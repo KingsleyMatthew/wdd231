@@ -27,7 +27,10 @@ places.forEach((place, index) => {
                 alt="${place.name}"
                 loading="lazy"
                 width="300"
-                height="200">
+                height="200"
+                loading="${index === 0 ? 'eager' : 'lazy'}"
+                fetchpriority="${index === 0 ? 'high' : 'auto'}"
+            >
         </figure>
 
         <address>${place.address}</address>

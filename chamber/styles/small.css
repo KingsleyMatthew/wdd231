@@ -683,3 +683,9 @@ dialog::backdrop {
 
   cursor: pointer;
 }
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    min-height: 2000px;
+}
