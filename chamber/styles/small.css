@@ -683,3 +683,8 @@ dialog::backdrop,
 
   cursor: pointer;
 }
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
