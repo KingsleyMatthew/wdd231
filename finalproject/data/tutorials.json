@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "HTML Fundamentals",
+    "category": "Frontend",
+    "level": "Beginner",
+    "duration": "2 Hours",
+    "description": "Learn semantic HTML structure and accessibility basics."
+  },
+  {
+    "id": 2,
+    "title": "CSS Essentials",
+    "category": "Frontend",
+    "level": "Beginner",
+    "duration": "3 Hours",
+    "description": "Master styling, colors, spacing, and responsive layouts."
+  },
+  {
+    "id": 3,
+    "title": "JavaScript Basics",
+    "category": "Frontend",
+    "level": "Beginner",
+    "duration": "4 Hours",
+    "description": "Learn variables, functions, events, and DOM manipulation."
+  },
+  {
+    "id": 4,
+    "title": "Responsive Web Design",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "duration": "3 Hours",
+    "description": "Create websites that work on all devices."
+  },
+  {
+    "id": 5,
+    "title": "Git & GitHub",
+    "category": "Tools",
+    "level": "Beginner",
+    "duration": "2 Hours",
+    "description": "Version control and collaboration essentials."
+  },
+  {
+    "id": 6,
+    "title": "Web Accessibility",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "duration": "2 Hours",
+    "description": "Build websites usable by everyone."
+  },
+  {
+    "id": 7,
+    "title": "JavaScript ES6",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "duration": "3 Hours",
+    "description": "Explore modern JavaScript features."
+  },
+  {
+    "id": 8,
+    "title": "Node.js Basics",
+    "category": "Backend",
+    "level": "Beginner",
+    "duration": "4 Hours",
+    "description": "Introduction to server-side JavaScript."
+  },
+  {
+    "id": 9,
+    "title": "REST APIs",
+    "category": "Backend",
+    "level": "Intermediate",
+    "duration": "3 Hours",
+    "description": "Learn API design and consumption."
+  },
+  {
+    "id": 10,
+    "title": "SQL Fundamentals",
+    "category": "Database",
+    "level": "Beginner",
+    "duration": "4 Hours",
+    "description": "Store and query structured data."
+  },
+  {
+    "id": 11,
+    "title": "Python Programming",
+    "category": "Programming",
+    "level": "Beginner",
+    "duration": "5 Hours",
+    "description": "Learn programming with Python."
+  },
+  {
+    "id": 12,
+    "title": "Cybersecurity Basics",
+    "category": "Security",
+    "level": "Beginner",
+    "duration": "3 Hours",
+    "description": "Understand digital security principles."
+  },
+  {
+    "id": 13,
+    "title": "Cloud Computing",
+    "category": "Cloud",
+    "level": "Intermediate",
+    "duration": "4 Hours",
+    "description": "Introduction to cloud technologies."
+  },
+  {
+    "id": 14,
+    "title": "UI/UX Design",
+    "category": "Design",
+    "level": "Beginner",
+    "duration": "3 Hours",
+    "description": "Design user-friendly digital products."
+  },
+  {
+    "id": 15,
+    "title": "Portfolio Development",
+    "category": "Career",
+    "level": "Beginner",
+    "duration": "2 Hours",
+    "description": "Build a professional developer portfolio."
+  }
+]

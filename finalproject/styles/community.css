@@ -1,0 +1,157 @@
+.community-hero {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #0a3d75, #0a66c2);
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.join-btn {
+    display: inline-block;
+    background: white;
+    color: #0a66c2;
+    padding: .8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.join-btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.stat-card h2 {
+    color: #0a66c2;
+    font-size: 2rem;
+}
+
+.events-section,
+.membership-section {
+    padding: 3rem 1rem;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 1.5rem;
+}
+
+.event-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.event-card h3 {
+    color: #0a66c2;
+}
+
+.event-btn {
+    margin-top: 1rem;
+    background: #0a66c2;
+    color: white;
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.event-btn:hover {
+    background: #084f96;
+}
+
+.membership-form {
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-form label {
+    display: grid;
+    gap: .5rem;
+    font-weight: 600;
+}
+
+.membership-form input,
+.membership-form select {
+    padding: .9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.membership-form button {
+    background: #0a66c2;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.membership-form button:hover {
+    background: #084f96;
+}
+
+dialog {
+    border: none;
+    border-radius: 15px;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,.65);
+}
+
+#closeModal {
+    margin-top: 1rem;
+    background: #0a66c2;
+    color: white;
+    border: none;
+    padding: .7rem 1rem;
+    border-radius: 8px;
+}

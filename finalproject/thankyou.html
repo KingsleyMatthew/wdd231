@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Membership Confirmation | Student Tech Hub</title>
+
+<link rel="stylesheet" href="styles/base.css">
+
+<style>
+
+main{
+max-width:800px;
+margin:auto;
+padding:2rem;
+}
+
+.confirmation{
+background:white;
+padding:2rem;
+border-radius:15px;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.confirmation h1{
+color:#0a66c2;
+}
+
+.details{
+margin-top:1rem;
+display:grid;
+gap:.75rem;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main>
+
+<div class="confirmation">
+
+<h1>
+Thank You For Joining!
+</h1>
+
+<p>
+Your registration has been received.
+</p>
+
+<div class="details">
+
+<p><strong>Name:</strong>
+<span id="name"></span></p>
+
+<p><strong>Email:</strong>
+<span id="email"></span></p>
+
+<p><strong>Skill Level:</strong>
+<span id="level"></span></p>
+
+<p><strong>Interest:</strong>
+<span id="interest"></span></p>
+
+</div>
+
+<p>
+<a href="community.html">
+Return to Community Page
+</a>
+</p>
+
+</div>
+
+</main>
+
+<script>
+
+const params =
+new URLSearchParams(
+window.location.search
+);
+
+document.querySelector("#name")
+.textContent =
+params.get("fullname");
+
+document.querySelector("#email")
+.textContent =
+params.get("email");
+
+document.querySelector("#level")
+.textContent =
+params.get("level");
+
+document.querySelector("#interest")
+.textContent =
+params.get("interest");
+
+</script>
+
+</body>
+</html>

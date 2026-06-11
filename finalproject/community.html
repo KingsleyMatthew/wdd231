@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Community & Contact | Student Tech Hub</title>
+
+    <meta name="description"
+        content="Join the Student Tech Hub community, connect with mentors, attend events, and grow your technology skills.">
+
+    <meta name="author" content="Kingsley Matthew Edet">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Student Tech Hub">
+    <meta property="og:description" content="Learn coding, web development, and digital skills.">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/community.css">
+
+    <!-- Scripts -->
+    <script type="module" src="scripts/community.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/navigation.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo.webp" alt="Student Tech Hub Logo">
+
+        <div class="site-branding">
+            <h1>Student Tech Hub</h1>
+            <p>Learn. Build. Grow.</p>
+        </div>
+    </div>
+
+    <button id="menu" aria-label="Navigation Menu">&#9776;</button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="community.html" class="active">Community</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="community-hero">
+
+        <div class="hero-content">
+
+            <h1>Connect. Collaborate. Grow.</h1>
+
+            <p>
+                Join a thriving student technology community where
+                aspiring developers learn together, build projects,
+                and receive mentorship from experienced professionals.
+            </p>
+
+            <a href="#membership-form" class="join-btn">
+                Join Our Community
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="images/hero.webp"
+                alt="Students collaborating on technology projects"
+                loading="lazy">
+        </div>
+
+    </section>
+
+    <section class="welcome-section">
+
+        <h2 id="welcomeMessage">
+            Welcome Future Tech Leader!
+        </h2>
+
+    </section>
+
+    <section class="stats-section">
+
+        <article class="stat-card">
+            <h2>500+</h2>
+            <p>Students</p>
+        </article>
+
+        <article class="stat-card">
+            <h2>50+</h2>
+            <p>Mentors</p>
+        </article>
+
+        <article class="stat-card">
+            <h2>20+</h2>
+            <p>Events</p>
+        </article>
+
+        <article class="stat-card">
+            <h2>100+</h2>
+            <p>Projects Built</p>
+        </article>
+
+    </section>
+
+    <section class="events-section">
+
+        <div class="section-heading">
+            <h2>Upcoming Events</h2>
+            <p>Learn, network, and gain hands-on experience.</p>
+        </div>
+
+        <div class="event-grid">
+
+            <article class="event-card">
+
+                <h3>Web Development Bootcamp</h3>
+
+                <p>
+                    Learn modern HTML, CSS, and JavaScript fundamentals.
+                </p>
+
+                <button
+                    class="event-btn"
+                    data-title="Web Development Bootcamp"
+                    data-description="A beginner-friendly workshop focused on HTML, CSS, and JavaScript.">
+                    Learn More
+                </button>
+
+            </article>
+
+            <article class="event-card">
+
+                <h3>Git & GitHub Workshop</h3>
+
+                <p>
+                    Master version control and collaborative development.
+                </p>
+
+                <button
+                    class="event-btn"
+                    data-title="Git & GitHub Workshop"
+                    data-description="Learn branching, commits, pull requests, and team collaboration.">
+                    Learn More
+                </button>
+
+            </article>
+
+            <article class="event-card">
+
+                <h3>Career Mentorship Session</h3>
+
+                <p>
+                    Connect with experienced developers and mentors.
+                </p>
+
+                <button
+                    class="event-btn"
+                    data-title="Career Mentorship Session"
+                    data-description="Get career advice, portfolio feedback, and industry insights.">
+                    Learn More
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="membership-section" id="membership-form">
+
+        <div class="section-heading">
+            <h2>Become a Community Member</h2>
+            <p>
+                Register to join our student technology network.
+            </p>
+        </div>
+
+        <form
+            class="membership-form"
+            action="thankyou.html"
+            method="get">
+
+            <label>
+                Full Name
+                <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    required>
+            </label>
+
+            <label>
+                Email Address
+                <input
+                    type="email"
+                    name="email"
+                    required>
+            </label>
+
+            <label>
+                Skill Level
+                <select name="level">
+
+                    <option value="Beginner">Beginner</option>
+
+                    <option value="Intermediate">
+                        Intermediate
+                    </option>
+
+                    <option value="Advanced">
+                        Advanced
+                    </option>
+
+                </select>
+            </label>
+
+            <label>
+                Area of Interest
+                <input
+                    type="text"
+                    name="interest"
+                    placeholder="Web Development">
+            </label>
+
+            <button type="submit">
+                Join Community
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<dialog id="eventModal">
+
+    <div id="modalContent"></div>
+
+    <button id="closeModal">
+        Close
+    </button>
+
+</dialog>
+
+<footer>
+
+    <div class="footer-grid">
+
+        <section class="footer-brand">
+            <h3>Student Tech Hub</h3>
+            <p>
+                Empowering students with technology skills,
+                coding resources, and community support.
+            </p>
+        </section>
+
+        <section class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-project">
+            <h3>Project</h3>
+
+            <ul>
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="#">Project Video</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © <span id="year"></span> Student Tech Hub |
+            Kingsley Matthew Edet |
+            WDD 231 Final Project
+        </p>
+    </div>
+
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
