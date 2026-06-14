@@ -4,7 +4,7 @@
     align-items: center;
     padding: 4rem 1rem;
     background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: white;
+    color: var(--light);
 }
 
 .hero-content h1 {
@@ -44,7 +44,7 @@
 }
 
 .stat-card {
-    background: white;
+    background: var(--background);
     padding: 2rem;
     text-align: center;
     border-radius: 12px;
@@ -52,7 +52,7 @@
 }
 
 .stat-card h2 {
-    color: #0a66c2;
+    color: var(--primary);
     font-size: 2rem;
 }
 
@@ -73,20 +73,20 @@
 }
 
 .event-card {
-    background: white;
+    background: var(--background);
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 3px 12px rgba(0,0,0,.08);
 }
 
 .event-card h3 {
-    color: #0a66c2;
+    color: var(--primary);
 }
 
 .event-secondary-btn {
     margin-top: 1rem;
-    background: #0a66c2;
-    color: white;
+    background: var(--primary);
+    color: var(--light);
     border: none;
     padding: .8rem 1rem;
     border-radius: 8px;
@@ -95,7 +95,7 @@
 }
 
 .event-secondary-btn:hover {
-    background: #084f96;
+    background: var(--primary);
 }
 
 .membership-form {
@@ -114,13 +114,13 @@
 .membership-form input,
 .membership-form select {
     padding: .9rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--light);
     border-radius: 8px;
 }
 
 .membership-form button {
-    background: #0a66c2;
-    color: white;
+    background: var(--primary);
+    color: var(--light);
     border: none;
     padding: 1rem;
     border-radius: 8px;
@@ -128,7 +128,7 @@
 }
 
 .membership-form button:hover {
-    background: #084f96;
+    background: var(--primary);
 }
 
 dialog {
@@ -144,8 +144,8 @@ dialog::backdrop {
 
 #closeModal {
     margin-top: 1rem;
-    background: #0a66c2;
-    color: white;
+    background: var(--primary);
+    color: var(--light);
     border: none;
     padding: .7rem 1rem;
     border-radius: 8px;
