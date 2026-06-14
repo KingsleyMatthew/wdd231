@@ -3,7 +3,7 @@
     gap: 2rem;
     align-items: center;
     padding: 4rem 1rem;
-    background: linear-gradient(135deg, #0a3d75, #0a66c2);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
 }
 
