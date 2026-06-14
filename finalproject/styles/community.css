@@ -19,8 +19,8 @@
 
 .join-primary-btn {
     display: inline-block;
-    background: white;
-    color: #0a66c2;
+    background: var(--background);
+    color: var(--primary);
     padding: .8rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
