@@ -1,0 +1,43 @@
+/* =========================
+ATTRIBUTIONS PAGE STYLES
+Student Tech Hub
+========================= */
+
+/* Page layout */
+main {
+max-width: 1000px;
+margin: 2rem auto;
+padding: 1rem;
+}
+
+/* Page title */
+h1 {
+font-family: "Poppins", sans-serif;
+color: var(--primary);
+font-size: 2.2rem;
+margin-bottom: 1.5rem;
+text-align: center;
+}
+
+/* Lists */
+ul {
+list-style: none;
+padding: 0;
+}
+
+li {
+padding: 0.5rem 0;
+border-bottom: 1px solid #eee;
+}
+
+/* Links */
+a {
+color: var(--primary);
+text-decoration: none;
+font-weight: 500;
+}
+
+a:hover {
+color: var(--accent);
+text-decoration: underline;
+}

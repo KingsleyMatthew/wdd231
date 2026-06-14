@@ -6,23 +6,55 @@
 
     <title>Attributions | Student Tech Hub</title>
 
-    <meta name="description"
-        content="Resource attributions for the Student Tech Hub website project.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Student Tech Hub Attributions Page - Learning Resources Credits">
+    <meta property="og:description" content="View the attributions and references used in Student Tech Hub, including images, tutorials, and learning resources used to build this educational platform.">
+    <meta property="og:image" content="https://kingsleymatthew.github.io/wdd231/finalproject/images/hero.webp">
+    <meta property="og:url" content="https://kingsleymatthew.github.io/wdd231/finalproject/attributions.html">
+    <meta property="og:type" content="website">
 
     <meta name="author" content="Kingsley Matthew Edet">
 
     <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/attributions.css">
+
+    <script type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
 
 <header>
-    <h1>Student Tech Hub - Attributions</h1>
+    <div class="logo-wrapper">
+        <img src="images/logo.webp" alt="Student Tech Hub Logo">
+
+        <div class="site-branding">
+            <h2>Student Tech Hub</h2>
+            <p>Learn. Build. Grow.</p>
+        </div>
+    </div>
+
+    <button id="menu" aria-label="Navigation Menu">&#9776;</button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 
-    <h2>Resource Attributions</h2>
+    <h1>Resource Attributions</h1>
 
     <p>
         The following resources were used in the development
@@ -144,11 +176,6 @@
     </p>
 
 </footer>
-
-<script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
-</script>
 
 </body>
 </html>

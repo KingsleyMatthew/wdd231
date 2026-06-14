@@ -54,7 +54,7 @@ header {
     height: auto;
 }
 
-.site-branding h1 {
+.site-branding h2 {
     margin: 0;
     font-size: 2rem;
     color: var(--light);
