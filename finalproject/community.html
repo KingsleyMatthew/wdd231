@@ -213,6 +213,7 @@
                     type="text"
                     name="fullname"
                     id="fullname"
+                    autocomplete="name"
                     required>
             </label>
 
@@ -221,12 +222,13 @@
                 <input
                     type="email"
                     name="email"
+                    autocomplete="email"
                     required>
             </label>
 
             <label>
                 Skill Level
-                <select name="level">
+                <select name="level" autocomplete="off">
 
                     <option value="Beginner">Beginner</option>
 
@@ -246,7 +248,9 @@
                 <input
                     type="text"
                     name="interest"
-                    placeholder="Web Development">
+                    placeholder="Web Development"
+                    autocomplete="organization-title"
+                >
             </label>
 
             <button type="submit">
